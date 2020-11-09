@@ -6,21 +6,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 import java.util.List;
 import io.mjm.blecentral.R;
 
 public class DevicesArrayAdapter extends BaseAdapter {
     private Context context;
-    private List<BluetoothDevice> mLeDevices;
+    private List<BluetoothDevice> mLeDevices = new ArrayList<BluetoothDevice>();;
     private LayoutInflater mInflator;
 
-    public DevicesArrayAdapter(Context context, List<BluetoothDevice> listeDev) {
+    public DevicesArrayAdapter(Context context) {
         super();
         this.context = context;
 
-        setmLeDevices(listeDev);
-      mInflator = (LayoutInflater) this.context
-                          .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        mInflator = (LayoutInflater) this.context
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     public int getItemCount() {
