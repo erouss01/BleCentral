@@ -22,9 +22,10 @@
     <string name="label_device_address">Adresse mac</string>
     <string name="label_device_name">Nom device</string>
     <string name="label_state">Statut</string>
-    <string name="disconnected">Déconnecté</string>
+    <string name="disconnected"></string>
     <string name="no_data">Aucune donnée disponible</string>
     <string name="Led_ToggleBtn">Off-On</string>
     <string name="connected">Connecté</string>
+
 
 </resources>
